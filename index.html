@@ -1,15 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTechWatch - Application de gestion des liens favoris</title>
+    <meta name="description" content="This is an application gathering all my favorite links">
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>DevTechWatch</title>
 </head>
 
 <body>
+    <div class="container">
+
+        <!-- Title -->
+        <section class="row title">
+            <h1 class="m-4">Liste des utilisateurs</h1>
+        </section>
+
+        <!-- Search bar & button -->
+        <section class="row m-4 mb-4">
+            <div class="col-md-3 mt-4">
+            </div>
+            <!-- searchbar -->
+            <div class="col-md-6 mt-4">
+                <div class="searchbar">
+                    <input type="search" id="searchbar" class="form-control" placeholder="Rechercher un utilisateur" aria-label="Search" />
+                  </div>
+            </div>
+            <!-- create user button -->
+            <div class="col-md-3 mt-4">
+                <button type="button" class="createBtn btn">Créer</button>
+            </div>
+        </section>
 
 
+        <!-- Users table -->
+        <section class="row m-4 table-responsive-md">
+            <table class="table table-striped mt-5 mb-5">
+                <thead>
+                  <tr class="table-titles-color text-white">
+                    <th scope="col">Surname</th>
+                    <th scope="col">Forename</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr id="line1">
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td class="d-flex flex-row justify-content-between mr-4">@mdo
+                        <span>
+                            <span class="mr-2"><img src="img/icons/edit.png" alt="icône modifier" style="width:20px"></span>
+                            <span><img src="img/icons/remove.png" alt="icône supprimer" style="width:20px">  </span>
+                        </span>  
+                    </td>
+                  </tr>
+                  <tr id="line2">
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td class="d-flex flex-row justify-content-between mr-4">@mdo
+                        <span>
+                            <span class="mr-2"><img src="img/icons/edit.png" alt="icône modifier" style="width:20px"></span>
+                            <span><img src="img/icons/remove.png" alt="icône supprimer" style="width:20px"></span>
+                        </span>  
+                    </td>
+                  </tr>
+                  <tr  id="line3">
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td class="d-flex flex-row justify-content-between mr-4">@mdo
+                        <span>
+                            <span class="mr-2"><img src="img/icons/edit.png" alt="icône modifier" style="width:20px"></span>
+                            <span><img src="img/icons/remove.png" alt="icône supprimer" style="width:20px"></span>
+                        </span>  
+                    </td>
+                  </tr>
+                  <tr id="line4">
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td class="d-flex flex-row justify-content-between mr-4">@mdo
+                        <span>
+                            <span><img src="img/icons/edit.png" alt="icône modifier" style="width:20px"></span>
+                            <span><img src="img/icons/remove.png" alt="icône supprimer" style="width:20px"></span>
+                        </span>  
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+
+        <!-- next & previous buttons -->
+        <section class="row mt-5">
+
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4 text-center d-flex justify-content-around">
+                <a class="previous-next-links btn btn-outline-light" href="#" role="button">Previous</a>
+                <a class="previous-next-links btn btn-outline-light" href="#" role="button">Next</a>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>    
+    <!-- JS -->
     <script src="main.js"></script>
 </body>
 </html>
