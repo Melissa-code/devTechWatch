@@ -1,0 +1,40 @@
+GITHUB :
+https://github.com/ThomasBDC/dtwfront052022
+
+----------
+
+codemyui
+
+BDD : les 2 tables links et users
+elle est sur myalways data
+
+- API hebergée sur azurwebsites.net (une API c'est un controller en MVC), STRAPI en JS
+- Swaegger: https://dtw.azurewebsites.net/swagger/ 
+pour montrer l'API DevTechWatch
+
+CRUD pour les links 
+CRUD pour les users 
+
+Recherche
+
+
+----------------------------------------
+
+CAHIER DES CHARGES 
+
+- page de gestion des utilisateurs :
+créer, modifier, supprimer - uniquement si pas de liens créés 
+
+- page principale
+affiche tous les liens (avec pagination), ajoute un lien, modifier, rechercher un lien
+
+-----------------------------------------
+
+Liste de choses à faire, créer le besoin, rajouter des fonctionnalités :
+- gestion de tags 
+- gestion de likes
+
+
+
+
+
