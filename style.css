@@ -60,3 +60,8 @@ h2 {
     font-size: 25px;
     color: #035E7B;
 }
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
